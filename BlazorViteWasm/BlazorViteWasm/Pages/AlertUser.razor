@@ -1,0 +1,15 @@
+@page "/alert-user"
+
+@inject IJSRuntime JsRuntime
+
+
+<p>
+    <button class="btn btn-primary mt-5" id="btn" @onclick="ClickButtonHandler">Alert User</button>
+</p>
+
+@code {
+
+
+    private async Task ClickButtonHandler() => await JsRuntime.AlertUser("Koekoek");
+
+}

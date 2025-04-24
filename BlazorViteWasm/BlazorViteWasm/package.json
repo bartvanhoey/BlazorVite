@@ -1,0 +1,24 @@
+{
+  "name": "blazorvitewasm",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "sass-embedded": "^1.86.3",
+    "terser": "^5.39.0",
+    "vite": "^6.3.2"
+  },
+  "scripts": {
+    "prebuild": "rimraf wwwroot/assets && prettier -w wwwbase/index.js wwwbase/index.scss",
+    "build": "cd wwwbase && vite build && cd .."
+  }
+}
