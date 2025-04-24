@@ -1,1 +1,1 @@
-# BlazorViteRepo
+# BlazorVite
